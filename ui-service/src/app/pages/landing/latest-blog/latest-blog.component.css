@@ -1,0 +1,61 @@
+
+.latest-blogs-card {
+  margin: 30px 10px 30px 10px;
+  background-color: white;
+  color: black;
+}
+
+.latest-blogs-title {
+
+}
+
+.card {
+  background-color: white;
+  color: #031122;
+}
+
+.card-img {
+  height: 15vw;
+  background-size: cover;
+}
+
+.card-dimension {
+  max-width: 600px;
+}
+
+.card-text {
+  font-size: 18px;
+  height: 90px;
+}
+
+.blog-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.explore-more-row {
+  display: flex;
+  justify-content: center;
+}
+
+.mat-raised-button {
+  border-radius: 20px;
+  background: #004A98;
+  text-decoration: none;
+}
+
+/* ------------- for Mobile devices ------------- */
+@media (max-width: 480px) {
+  .card-img {
+    height: 50vw;
+    background-size: cover;
+  }
+
+  .card-dimension {
+    max-width: 90vw;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+
+}

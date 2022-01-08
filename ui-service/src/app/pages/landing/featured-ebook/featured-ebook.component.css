@@ -1,0 +1,40 @@
+.featured-ebooks-card {
+  margin: 30px 10px 30px 10px;
+  background-color: white;
+  color: black;
+}
+
+.explore-more-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.card {
+  background-color: white;
+  color: #031122;
+}
+
+.card-text {
+  font-size: 18px;
+  height: 90px;
+}
+
+.ebook-title {
+  font-weight: bold;
+  font-size: 20px;
+  height: 35px;
+}
+
+.mat-raised-button {
+  border-radius: 20px;
+  margin-top: -5px;
+  margin-bottom: -5px;
+  background: #004A98;
+  text-decoration: none;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: right;
+}

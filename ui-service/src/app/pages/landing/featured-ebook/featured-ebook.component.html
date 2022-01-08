@@ -1,0 +1,26 @@
+<section>
+  <mat-card class="featured-ebooks-card">
+    <mat-card-content>
+      <div class="container">
+        <h1 class="latest-blogs-title">Featured ebooks</h1>
+        <div class="card-deck">
+          <div class="card" *ngFor="let ebook of ebooks">
+            <img class="card-img-top"
+              src="https://assets.codepen.io/6093409/mountains-3.jpg"
+              alt="a snow-capped mountain range"/>
+            <div class="card-body">
+              <h5 class="ebook-title">{{ebook.title}}</h5>
+              <p class="card-text">{{ebook.description}}</p>
+            </div>
+            <div class="card-footer">
+              <a routerLink="/login" mat-raised-button color="primary">view details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="explore-more-row">
+        <a href="" class="btn btn-primary">Explore More</a>
+      </div>
+    </mat-card-content>
+  </mat-card>
+</section>
