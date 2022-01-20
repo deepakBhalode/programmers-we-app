@@ -1,1 +1,36 @@
-<p>login works!</p>
+<div class="row">
+  <h1 mat-dialog-title>Login</h1>
+  <button
+    mat-mini-fab mat-dialog-close class="close-icon">
+    <mat-icon>close</mat-icon>
+  </button>
+</div>
+<div mat-dialog-content>
+  <h2 style="margin-bottom: -5px;margin-top: 5px;">Welcome back!</h2>
+  <p>Please enter your email address and password to access your account.</p>
+  <form class="login-form">
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your email</mat-label>
+      <input matInput placeholder="useremail@example.com" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill">
+      <mat-label>Enter your password</mat-label>
+      <input matInput [type]="hide ? 'password' : 'text'">
+      <button
+        mat-icon-button matSuffix (click)="hide = !hide"
+        [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+      </button>
+    </mat-form-field>
+    <div class="forgot-password-link">
+      <a routerLink="/forgot-password">forgot password</a>
+    </div>
+    <div class="button-row">
+      <button class="login-btn" mat-raised-button color="primary">Log In</button>
+    </div>
+  </form>
+  <div class="row registration-row">
+    Don't have an account?
+    <a routerLink="/register" class="registration-link"> register</a>
+  </div>
+</div>

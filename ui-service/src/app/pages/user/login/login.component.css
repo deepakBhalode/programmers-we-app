@@ -1,0 +1,77 @@
+
+/* -----------------  form styling ----------------- */
+.login-form {
+  margin-top: 25px;
+}
+
+.mat-form-field {
+  color: #031122;
+  width: 280px;
+}
+
+mat-label {
+  color: #031122;
+}
+
+::ng-deep .mat-form-field-appearance-fill .mat-form-field-flex{
+  background-color: #D9D9D9 !important;
+  color: #031122;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label{
+  color: #031122 !important;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color: #031122 !important;
+  color: #031122 !important;
+}
+/* -----------------  end ----------------- */
+
+
+/* ----------------- button styling ----------------- */
+.close-icon {
+  margin-top: -10px;
+  margin-left: auto;
+  background-color: #006BCB;
+}
+
+.login-btn {
+  width: 280px;
+  background-color: #D49415;
+}
+
+/* -----------------  end ----------------- */
+
+.mat-dialog-title {
+  margin-left: 15px;
+  font-weight: bold;
+  color: #006BCB;
+}
+
+.forgot-password-link {
+  display: flex;
+  justify-content: right;
+  margin-top: -10px;
+  margin-bottom: 25px;
+}
+
+.registration-row {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.registration-link {
+  color: #006BCB;
+  margin-left: 5px;
+}
+
+@media (max-width: 400px) {
+
+  .mat-form-field, .login-btn {
+    width: 65vw;
+  }
+
+
+
+}

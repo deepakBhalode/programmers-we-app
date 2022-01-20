@@ -1,6 +1,10 @@
 <section>
     <div class="col-12 menu-section">
-      <a routerLink="/login" mat-raised-button color="primary">Log in</a>
+      <!-- <a
+         mat-raised-button color="primary"
+        click="openLoginDialogBox()">Log in
+      </a> -->
+      <button mat-raised-button (click)="openLoginDialogBox()">Log in</button>
     </div>
     <div class="description-section"></div>
     <div class="slogan">
@@ -11,6 +15,11 @@
 <app-latest-blog></app-latest-blog>
 <footer>
   <mat-toolbar>
-    
+    <div>
+
+    </div>
+    <div>
+      Copyright 2022
+    </div>
   </mat-toolbar>
 </footer>
